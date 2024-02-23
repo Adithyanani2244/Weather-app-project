@@ -4,12 +4,11 @@ import {Search, MapPin, Wind} from 'react-feather';
 import "./App.css"
 import dateFormat from 'dateformat';
 import { useState } from 'react';
-// import BackgroundVideo from './video/video';
+
 
 const apiKey =  `94dd868dc50b0c1e16876806b84f3894`;
 
 function App() {
-
   const [city,setCity] = useState("");
   const [weather,setWeather] = useState({});
 
