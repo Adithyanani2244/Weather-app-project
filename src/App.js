@@ -4,6 +4,7 @@ import { MapPin, Wind } from 'react-feather';
 import "./App.css"
 import dateFormat from 'dateformat';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const apiKey = `94dd868dc50b0c1e16876806b84f3894`;
@@ -44,6 +45,8 @@ function App() {
   }
 
   return (
+    <>
+    
     <div className="app">
       <h1>Weather App</h1>
       <div className="input-wrapper">
@@ -78,6 +81,7 @@ function App() {
           <center><h3 >No data found! ☹️</h3></center>
       }
     </div>
+    </>
   );
 }
 
