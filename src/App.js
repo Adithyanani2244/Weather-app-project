@@ -48,13 +48,14 @@ function App() {
     <>
     
     <div className="app">
-      <h1>Weather App</h1>
+      <h1 style={{fontFamily:"serif", fontWeight:"bold"}}>Air Quality Index </h1>
       <div className="input-wrapper">
         <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder='Enter City Name' />
         <button onClick={Handlefunction}>
           Search
         </button>
       </div>
+      <br></br>
       {
         weather && Object.keys(weather).length > 0 ?
           <div className="content">
@@ -78,7 +79,7 @@ function App() {
             </div>
           </div>
           :
-          <center><h3 >No data found! ☹️</h3></center>
+          <center><h3 style={{fontFamily:"serif",fontWeight:"bold"}} >No data found! ☹️</h3></center>
       }
     </div>
     </>
